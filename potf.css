@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    
+}
+.container{
+    color: black;
+    color: whitesmoke;
+}
+.container{
+    max-width: 1350px;
+    margin: auto;
+    /* padding: 0px 75px; */
+    background-image: url(https://i.pinimg.com/originals/6f/7c/63/6f7c63991726d61d63730682e791d78c.gif);
+    background-size: cover;
+}
+.navbar{
+    background-color: black;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    box-shadow: 0 0 30px;
+}
+.navbar.logo{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 23px;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+nav ul li:hover:after{
+    width: 100%;
+    left: 0;
+}
+nav ul li:after{
+    content: "";
+    pointer-events:none;
+    bottom: -2px;
+    left: 50px;
+    position: absolute;
+    width: 0%;
+    height:2px;
+    background-color: blueviolet;
+    transition-timing-function:cubic-bezier(0,0,0,0);
+    transition-duration: 400ms;
+    transition-property: width,left;
+}
+/* nav::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    margin-top: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+li{
+    color: whitesmoke;
+    display: inline-table;
+    margin-top: 0%;
+    font-size: large;
+    padding: 7px;
+    margin-left: 3pc;
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+} 
+.content{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    justify-content: center;
+    position: relative;
+}
+.hero-main{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    position: relative;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+    margin-left: 25px;
+}
+.hero-text h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero-text h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 10pc;
+    margin-bottom: 15px;
+    color: whitesmoke
+}
+.hero-image img{
+    margin-top: 20px;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    margin-left: 25pt;
+    border: 3px solid white;
+    box-shadow: 0 0 35px rgba(213, 345, 255, 0.67);
+    animation: ani123 8s ease-in-out infinite ;
+}
+img{
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+@keyframes ani123 {
+    0%{
+        border-radius: 80%;
+    }
+    50%{
+        border-radius: 60%;
+    }
+    100%{
+        border-radius: 90%;
+    }
+    
+}
+.hero-text h2 {
+    overflow: hidden; /* Hide overflow to create typewriter effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 2px solid transparent; /* Create the blinking cursor effect */
+    animation: typing 3s steps(40, end) infinite, blinkCursor 0.5s infinite step-end;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+.buttons{
+    margin: 20px 0;
+    margin-left: 15px;
+}
+.buttons button{
+    padding: 10px 15px;
+    background-color: blueviolet;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 255);
+    border-radius: 20px;
+    border: none;
+    font-size: larger;
+}
+.btn1 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.new_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+.new_socials a {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  .new_socials {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.new_socials li {
+    transition: transform 0.3s ease;
+}
+
+.new_socials li:hover {
+    transform: scale(1.2) rotate(90deg); /* Adjust the scale factor for the desired zoom effect */
+}
+
+.new_socials a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Assuming you have some styles for the icons like ri-facebook-fill, ri-instagram-line, etc. */
+.ri-facebook-fill,
+.ri-instagram-line,
+.ri-youtube-line,
+.ri-linkedin-box-fill {
+    font-size: 30px; /* Adjust the icon size as needed */
+    color: black; /* Set the default color */
+    transition: color 0.3s ease; /* Add a transition for the color change */
+}
+
+.new_socials a:hover .ri-facebook-fill {
+    color: #1877f2; /* Change the color on hover */
+}
+
+.new_socials a:hover .ri-instagram-line {
+    color: #c13584; /* Change the color on hover */
+}
+
+.new_socials a:hover .ri-youtube-line {
+    color: #ff0000; /* Change the color on hover */
+}
+
+.new_socials a:hover .ri-linkedin-box-fill {
+    color: #0077b5; /* Change the color on hover */
+}
+.main-body,  h1, a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.newimg{
+    margin-top: 40px;
+    display: inline-block;
+    float:left;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10pc;
+}
+.aboutimg{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+    
+}
+/* .about-text{
+} */
+.abtext{
+    margin-top: 40px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    margin-right: 18cap;
+}
+.skills{
+    background-color: darkmagenta;
+    color: whitesmoke;
+    margin-top: 5pt;
+}
+.skills h1{
+    color: whitesmoke;
+    
+}
+.skills-prog {
+    clear: both;
+    background-color: darker-blue;
+    padding: 15px;
+}
+.skills-prog ul {
+    margin-left: 15px;
+  }
+ .skills-prog ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+  }
+.skills-prog ul li:hover {
+    color: yellow;
+  }
+.skills-prog ul li:hover .skills-bar .bar {
+    background: yellow;
+    box-shadow: 0 0 0 1px yellow;
+  }
+.skills-prog ul li span {
+    display: block;
+    width: 120px;
+  }
+.skills-prog ul li .skills-bar {
+    background: white;
+    height: 8px;
+    width: calc(100% - 120px);
+    position: relative;
+    border-radius: 8px;
+  }
+ .skills-prog ul li .skills-bar .bar {
+    position: absolute;
+    height: 8px;
+    background: orange;
+    box-shadow: 0 0 0 orange;
+    border-radius: 5px;
+  }
+  .newbord{
+    background-color: #1877f2;
+    border-radius: 8px;
+    padding-top: 2pc;
+    padding-bottom: 2pc;
+    padding-right: 5pc;
+  }
+  .education{
+    margin-top: 30px;
+
+  }
+  .school {
+    display: flex;
+    width: 900px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 235px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.img img {
+    width: 300px;
+    height: 250px;
+}
+.school-text {
+    padding: 20px; /* Adjust the padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    line-height: 3; 
+}
+.school {
+    transition: transform 0.8s ease;
+}
+.school:hover{
+    transform: scale(1.1);
+}
+.projects {
+    margin-top: 40px;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-color: darkslateblue;
+    text-align: center;
+}
+.projects h3{
+    margin-top: 25px;
+}
+.dap{
+    display: flex;
+    width: 900px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 235px;
+    box-shadow: 0 0 20px 5px rgb(255, 255, 255); /* Add box shadow */
+}
+.dap img{
+    width: 900px;
+} 
+.certificates{
+    background-color: indigo;
+    margin-top: 30px;
+    padding-top: 30px;
+    height: 225vh;
+}
+.certificates h1{
+    color: whitesmoke;
+}
+.imag1{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin-top: 35px;
+    margin-left: 400px;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255,0.9);
+    transition: transform 0.3s ease-in-out;
+}
+.imag1:hover {
+    transform: scale(1.1) rotate(360deg); /* Scale up and rotate the image on hover */
+}
+.experience{
+    margin-top: 30px;
+    padding-top: 35px;
+    /* margin-left: 20pc; */
+}
+.experience h1{
+    text-align: center;
+}
+.func {
+    margin-left: 160px;
+    width: 80%; /* Adjust the width as needed */
+    padding-right: 20px; /* Add some spacing between the sections */
+}
+
+.work {
+    background-color: #0f0f0f; /* Add a background color for better readability */
+    padding: 15px; /* Add padding to the section */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.work h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff0202; /* Set a dark color for the heading */
+}
+
+.work ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work li {
+    margin-bottom: 15px;
+}
+
+.work li span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.work li small {
+    color: #777; /* Set a slightly darker color for the dates and company names */
+    font-size: 0.9em;
+} 
+
+
+
+.skil1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.skills-container {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+.skills-box {
+    display: flex;
+            flex-direction: column;
+            align-items:first baseline;
+            margin: 0 15px;
+            transform-origin: 50% 50%;
+            transform: rotate(0deg);
+            transition: transform 0.5s ease-in-out;
+}
+
+.skills-box:hover {
+    transform: rotate(360deg);
+}
+
+.skills-icon {
+    font-size: 2rem;
+    color: #3498db; /* Customize the color as needed */
+    margin-bottom: 10px;
+}
+.main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 35px;
+  }
+  
+  .main {
+    --progress-bar-width: 200px;
+    --progress-bar-height: 200px;
+    --font-size: 2rem;
+  }
+  
+  section {
+    
+    height: 100vh;
+    background-color: #100c08;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center;
+    gap: 2rem;
+  }
+  .circular-progress {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 29px;
+    color: #e41212; /* Set your desired color */
+}
+  .inner-circle {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 30px);
+    height: calc(var(--progress-bar-height) - 30px);
+    border-radius: 50%;
+    background-color: lightgrey;
+  }
+  
+  .percentage {
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+  }
+  
+  @media screen and (max-width: 800px) {
+    :root {
+      --progress-bar-width: 150px;
+      --progress-bar-height: 150px;
+      --font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    :root {
+      --progress-bar-width: 120px;
+      --progress-bar-height: 120px;
+      --font-size: 1rem;
+    }
+  }
+
+
+  .interests h3{
+    color: gold;
+}
+
+ .interests {
+    background-color:darkblue;
+    margin: 15px 0 0;
+    padding: 15px;
+  }
+ .interests-items {
+    box-sizing: border-box;
+    padding: 0 0 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+   .interests-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+ .interests-items div:hover i {
+    transform: scale(1.2) rotate(360deg);
+  }
+ .interests-items div:hover span {
+    color: yellow;
+    transition-duration: 0.3s;
+  }
+ .interests-items div i {
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: orange;
+    transition-duration: 0.3s;
+  }
+ .interests-items div span {
+    display: block;
+  } 
+  .footer_container {
+    display: grid;
+    gap: 3rem 1rem;
+  }
+  
+  .footer_col p {
+    margin-block: 2rem;
+    color: var(--white);
+  }
+  .footer_col h4{
+    margin-left: 29px;
+  }
+  
+.footer_socials {
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+.footer_socials a {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  .footer_socials {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer_socials li {
+    transition: transform 0.3s ease;
+}
+
+.footer_socials li:hover {
+    transform: scale(1.2) rotate(90deg); /* Adjust the scale factor for the desired zoom effect */
+}
+
+.footer_socials a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Assuming you have some styles for the icons like ri-facebook-fill, ri-instagram-line, etc. */
+.ri-facebook-fill,
+.ri-instagram-line,
+.ri-youtube-line,
+.ri-linkedin-box-fill {
+    font-size: 30px; /* Adjust the icon size as needed */
+    color: black; /* Set the default color */
+    transition: color 0.3s ease; /* Add a transition for the color change */
+}
+
+.footer_socials a:hover .ri-facebook-fill {
+    color: #1877f2; /* Change the color on hover */
+}
+
+.footer_socials a:hover .ri-instagram-line {
+    color: #c13584; /* Change the color on hover */
+}
+
+.footer_socials a:hover .ri-youtube-line {
+    color: #ff0000; /* Change the color on hover */
+}
+
+.footer_socials a:hover .ri-linkedin-box-fill {
+    color: #0077b5; /* Change the color on hover */
+}
+  .footer_col h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .footer_links {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .footer_links li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer_links li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer_links li span {
+    font-size: 1.25rem;
+  }
+  
+  .footer_col form {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .footer_col input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--white);
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+  }
+  
+  .footer_col input::placeholder {
+    color: var(--white);
+  }
+  
+  .footer_col .btn:hover {
+    color: var(--primary-color);
+    background-color: var(--white);
+  }
+  
+  .footer_bar {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center;
+  }
+  .footer_container {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+
+  .footer_col:last-child {
+    grid-area: unset;
+  }
+.finalfoot{
+    margin-top: 30px;
+    padding-top: 35px ;
+    background-color: darkgray;
+}
+/* Add this at the end of your existing CSS */
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .navbar {
+        padding: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-top: 5pc;
+        margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+        margin-top: 5px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10pt;
+    }
+
+    .newimg {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .aboutimg {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin: 20px 0;
+    }
+
+    .abtext {
+        margin-right: 0;
+    }
+
+    .skills-prog ul li {
+        margin-left: 0;
+    }
+
+    .school {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .school-text {
+        padding: 10px;
+    }
+
+    .projects .dap,
+    .certificates .imag1 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .experience .func {
+        margin-left: 0;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_col {
+        margin-bottom: 30px;
+    }
+
+    .round-photo-container {
+        text-align: center;
+    }
+
+    .round-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .intro-text {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 0.9rem;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Hide the bars by default */
+    .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Adjustments for the navigation items when the menu is open */
+    .navbar.menu-open .nav-items {
+        display: block;
+    }
+}
